@@ -4,7 +4,6 @@ node_modules/
 dist/
 # env files
 .env
-.env.*
 # editor
 .vscode/
 !.vscode/mcp.json
