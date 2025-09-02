@@ -1,0 +1,42 @@
+{
+  "name": "ttlock-mcp",
+  "version": "1.0.0",
+  "description": "MCP server para interactuar con la TTLock Cloud API",
+  "type": "module",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "dotenv -e .env -- tsx src/server.ts",
+    "build": "tsc",
+    "start": "dotenv -e .env -- node dist/server.js",
+    "inspect": "dotenv -e .env -- npx @modelcontextprotocol/inspector node dist/server.js",
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "keywords": [
+    "mcp",
+    "ttlock",
+    "cloud-api",
+    "nodejs",
+    "typescript"
+  ],
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": ">=20.11",
+    "npm": ">=10"
+  },
+  "packageManager": "npm@10",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.1",
+    "qs": "^6.14.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "@types/qs": "^6.14.0",
+    "dotenv-cli": "^10.0.0",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
